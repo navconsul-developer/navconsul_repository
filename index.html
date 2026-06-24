@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My GitHub Page</title>
 
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #161b22;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    nav a {
+      color: #58a6ff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .card {
+      background: #161b22;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #161b22;
+      font-size: 0.9rem;
+    }
+
+    button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      background: #238636;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #2ea043;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to My GitHub Page</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>
+        Hi! This is my simple GitHub Pages website. You can edit this section
+        to introduce yourself.
+      </p>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li>Project 1 - Description</li>
+        <li>Project 2 - Description</li>
+        <li>Project 3 - Description</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Email: yourname@example.com</p>
+      <button onclick="sayHello()">Click Me</button>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 My GitHub Page
+  </footer>
+
+  <script>
+    function sayHello() {
+      alert("Hello! Thanks for visiting my site.");
+    }
+  </script>
+</body>
+</html>
